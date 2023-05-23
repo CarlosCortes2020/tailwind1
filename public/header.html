@@ -21,7 +21,7 @@
     <div class="h-36 md:h-80 bg-no-repeat bg-cover bg-center" style="background-image: url(https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80)">
     </div>
 
-    <main class="bg-gray-300 grid md:grid-cols-2 md:container md:w-11/12 md:mx-auto md:gap-3">
+    <main class="bg-gray-300 grid md:grid-cols-2 md:container md:w-11/12 md:mx-auto md:gap-3 lg:grid-cols-3">
         <section class="w-72 mx-auto my-4 rounded-md grid">
             <div class="grid items-stretch">
                 <img class="rounded-xl bg-transparent" src="https://tse2.mm.bing.net/th?id=OIP.7FAvp-4PyOw1Ff22wq7D1AHaEK&pid=Api&P=0" alt="">
@@ -39,7 +39,7 @@
                 <p class="mt-2 text-xs bg-transparent text-yellow-700">
                     &starf;&starf;&starf;&starf;&star; | 47 reseñas
                 </p>
-                <button class="mx-auto mt-4 bg-sky-500 hover:bg-sky-700 rounded-md px-3 py-1">
+                <button class="mx-auto mt-4 bg-sky-500 hover:bg-sky-700 rounded-md px-3 py-1 text-white">
                     Ordenar
                 </button>
             </div>
@@ -62,14 +62,48 @@
                 <p class="mt-2 text-xs bg-transparent text-yellow-700">
                     &starf;&starf;&starf;&starf;&star; | 47 reseñas
                 </p>
-                <button class="mx-auto mt-4 bg-sky-500 hover:bg-sky-700 rounded-md px-3 py-1">
+                <button class="mx-auto mt-4 bg-sky-500 hover:bg-sky-700 rounded-md px-3 py-1 text-white">
                     Ordenar
                 </button>
             </div>
         </section>
+
+        <section class="w-72 mx-auto my-4 rounded-md grid">
+            <div class="grid items-stretch">
+                <img class="rounded-xl bg-transparent" src="https://tse2.mm.bing.net/th?id=OIP.7FAvp-4PyOw1Ff22wq7D1AHaEK&pid=Api&P=0" alt="">
+            </div>
+            <div class=" grid bg-white rounded-xl mx-2 -mt-5 p-3">
+                <h1 class="text-2xl tracking-tight font-semibold uppercase  bg-transparent text-gray-900">
+                    Tacos de pastor
+                </h1>
+                <p class="mt-2 bg-transparent text-gray-700">
+                    Tacos de pastor con cilantro, cebolla, limon y doble tortilla.
+                </p>
+                <h2 class="mt-2 text-sm font-semibold bg-transparent text-gray-800">
+                    MXN $15.00
+                </h2>
+                <p class="mt-2 text-xs bg-transparent text-yellow-700">
+                    &starf;&starf;&starf;&starf;&star; | 47 reseñas
+                </p>
+                <button class="mx-auto mt-4 bg-sky-500 hover:bg-sky-700 rounded-md px-3 py-1 text-white">
+                    Ordenar
+                </button>
+            </div>
+        </section>
+
+        
     </main>
 
-    
+    <form class="w-72 md:w-96 mx-auto my-2 md:mx-auto grid grid-cols-1" action="">
+        <div>Nombre</div>
+        <input class="leading-snug text-gray-800 py-1 px-4 rounded-md border border-blue-300 bg-gray-100" type="text" placeholder="Carlos Cortes">
+        <div>E-mail</div>
+        <input class="leading-snug text-gray-800 py-1 px-4 rounded-md border border-blue-300 bg-gray-100" type="text" placeholder="carlos.cortes@contoso.com">
+        <div>Comentarios</div>
+        <textarea class="leading-snug text-gray-800 py-1 px-4 rounded-md border border-blue-300 bg-gray-100" name="comentarios" id="" cols="25" rows="10"></textarea>
+        <button class="shadow-xl mx-auto inline-block my-4 bg-sky-500 hover:bg-sky-700 rounded-md px-3 py-1 text-white">Enviar</button>
+    </form>
+
     <footer class="relative bottom-0 w-full bg-gray-950 text-white -mt-4 md:mt-0 -mb-4">
         <div class="md:flex md:flex-row-reverse justify-around">
             <div class="mt-4 ml-8 pt-2">
