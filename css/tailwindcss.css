@@ -1,7 +1,23 @@
 @tailwind base;
 @tailwind components;
+
+/*Crea compnente de formulario para reducir la cantidad de lineas decodigo y clases en cada elemento agrupando funcionalidad y reduciendo cantidad de codigo*/
+
+.form-control {
+    @apply leading-snug text-gray-800 py-1 px-4 rounded-md border border-blue-300 bg-gray-100;
+}
+
+.btn-control {
+    @apply shadow-xl inline-block my-4 bg-sky-500 rounded-md px-3 py-1 text-white;
+}
+.btn-control:hover {
+    @apply bg-sky-600;
+}
+
 @tailwind utilities;
 @tailwind variants;
+
+
 
 h1 {
     @apply text-3xl text-green-700 font-semibold;
