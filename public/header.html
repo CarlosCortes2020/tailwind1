@@ -9,7 +9,7 @@
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.12.1/dist/cdn.min.js"></script>
     <title>Header</title>
 </head>
-<body class="bg-gray-300">
+<body class="bg-gray-400">
     <nav x-data="{ open: false }" class="fixed z-10 w-full bg-gray-950 text-white">
         <div class="px-2 py-1 bg-gray-950 text-white flex justify-between items-center">
             <div>
@@ -19,7 +19,7 @@
                 &equiv;
             </div>
         </div>
-        <div x-show="open" @click.away="open = false">
+        <div class="bg-transparent" x-show="open" @click.away="open = false">
             <div class="mx-2">
                 <input class="form-control w-full" type="search" name="search" id="" placeholder="Buscar">
             </div>
@@ -49,10 +49,10 @@
     <div class="h-36 md:h-80 bg-no-repeat bg-cover bg-center" style="background-image: url(https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80)">
     </div>
 
-    <main class="bg-gray-300 grid md:grid-cols-2 md:container md:w-11/12 md:mx-auto md:gap-3 lg:grid-cols-3">
+    <main class="bg-gray-400 grid md:grid-cols-2 md:container md:w-11/12 md:mx-auto md:gap-3 lg:grid-cols-3">
         <section class="w-72 mx-auto my-4 rounded-md grid">
             <div class="grid items-stretch">
-                <img class="rounded-xl bg-transparent" src="https://tse2.mm.bing.net/th?id=OIP.7FAvp-4PyOw1Ff22wq7D1AHaEK&pid=Api&P=0" alt="">
+                <img class="object-none h-56 w-full rounded-xl bg-transparent" src="https://tse2.mm.bing.net/th?id=OIP.7FAvp-4PyOw1Ff22wq7D1AHaEK&pid=Api&P=0" alt="">
             </div>
             <div class="grid bg-white rounded-xl mx-2 -mt-5 pt-3 pl-3 pr-3">
                 <h1 class="text-2xl tracking-tight font-semibold uppercase  bg-transparent text-gray-900">
@@ -62,7 +62,30 @@
                     Tacos de pastor con cilantro, cebolla, limon y doble tortilla.
                 </p>
                 <h2 class="mt-2 text-sm font-semibold bg-transparent text-gray-800">
-                    MXN $15.00
+                    MXN $35.00
+                </h2>
+                <p class="mt-2 text-xs bg-transparent text-yellow-700">
+                    &starf;&starf;&starf;&starf;&star; | 47 reseñas
+                </p>
+                <button class="btn-control mx-auto">
+                    Ordenar
+                </button>
+            </div>
+        </section>
+        
+        <section class="w-72 mx-auto my-4 rounded-md grid">
+            <div class="grid items-stretch">
+                <img class="object-none h-56 w-full rounded-xl bg-transparent" src="https://images.unsplash.com/photo-1619096252214-ef06c45683e3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHNhbmR3aWNofGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" alt="">
+            </div>
+            <div class="grid bg-white rounded-xl mx-2 -mt-5 pt-3 pl-3 pr-3">
+                <h1 class="text-2xl tracking-tight font-semibold uppercase  bg-transparent text-gray-900">
+                    Beef & Pork
+                </h1>
+                <p class="mt-2 bg-transparent text-gray-700">
+                    Pan Bristoff con carne de ternera asada y tocino de lechón.
+                </p>
+                <h2 class="mt-2 text-sm font-semibold bg-transparent text-gray-800">
+                    MXN $37.55
                 </h2>
                 <p class="mt-2 text-xs bg-transparent text-yellow-700">
                     &starf;&starf;&starf;&starf;&star; | 47 reseñas
@@ -75,17 +98,17 @@
 
         <section class="w-72 mx-auto my-4 rounded-md grid">
             <div class="grid items-stretch">
-                <img class="rounded-xl bg-transparent" src="https://tse2.mm.bing.net/th?id=OIP.7FAvp-4PyOw1Ff22wq7D1AHaEK&pid=Api&P=0" alt="">
+                <img class="object-none h-56 w-full rounded-xl bg-transparent" src="https://images.unsplash.com/photo-1551248429-40975aa4de74?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGVuc2FsYWRhfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" alt="">
             </div>
             <div class="grid bg-white rounded-xl mx-2 -mt-5 pt-3 pl-3 pr-3">
                 <h1 class="text-2xl tracking-tight font-semibold uppercase  bg-transparent text-gray-900">
-                    Tacos de pastor
+                    Mar & Tierra
                 </h1>
                 <p class="mt-2 bg-transparent text-gray-700">
-                    Tacos de pastor con cilantro, cebolla, limon y doble tortilla.
+                    Camarón, lechuga, pechuga de pollo con queso Roqueffort.
                 </p>
                 <h2 class="mt-2 text-sm font-semibold bg-transparent text-gray-800">
-                    MXN $15.00
+                    MXN $47.75
                 </h2>
                 <p class="mt-2 text-xs bg-transparent text-yellow-700">
                     &starf;&starf;&starf;&starf;&star; | 47 reseñas
@@ -98,40 +121,17 @@
 
         <section class="w-72 mx-auto my-4 rounded-md grid">
             <div class="grid items-stretch">
-                <img class="rounded-xl bg-transparent" src="https://tse2.mm.bing.net/th?id=OIP.7FAvp-4PyOw1Ff22wq7D1AHaEK&pid=Api&P=0" alt="">
+                <img class="object-none h-56 w-full rounded-xl bg-transparent" src="https://images.unsplash.com/photo-1560717845-968823efbee1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8c2FsbW9ufGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" alt="">
             </div>
             <div class="grid bg-white rounded-xl mx-2 -mt-5 pt-3 pl-3 pr-3">
                 <h1 class="text-2xl tracking-tight font-semibold uppercase  bg-transparent text-gray-900">
-                    Tacos de pastor
+                    Salmon Luigi
                 </h1>
                 <p class="mt-2 bg-transparent text-gray-700">
-                    Tacos de pastor con cilantro, cebolla, limon y doble tortilla.
+                    Salmón silvestre bañado en salsa Tiramichew y nogada.
                 </p>
                 <h2 class="mt-2 text-sm font-semibold bg-transparent text-gray-800">
-                    MXN $15.00
-                </h2>
-                <p class="mt-2 text-xs bg-transparent text-yellow-700">
-                    &starf;&starf;&starf;&starf;&star; | 47 reseñas
-                </p>
-                <button class="btn-control mx-auto">
-                    Ordenar
-                </button>
-            </div>
-        </section>
-
-        <section class="w-72 mx-auto my-4 rounded-md grid">
-            <div class="grid items-stretch">
-                <img class="rounded-xl bg-transparent" src="https://tse2.mm.bing.net/th?id=OIP.7FAvp-4PyOw1Ff22wq7D1AHaEK&pid=Api&P=0" alt="">
-            </div>
-            <div class="grid bg-white rounded-xl mx-2 -mt-5 pt-3 pl-3 pr-3">
-                <h1 class="text-2xl tracking-tight font-semibold uppercase  bg-transparent text-gray-900">
-                    Tacos de pastor
-                </h1>
-                <p class="mt-2 bg-transparent text-gray-700">
-                    Tacos de pastor con cilantro, cebolla, limon y doble tortilla.
-                </p>
-                <h2 class="mt-2 text-sm font-semibold bg-transparent text-gray-800">
-                    MXN $15.00
+                    MXN $55.25
                 </h2>
                 <p class="mt-2 text-xs bg-transparent text-yellow-700">
                     &starf;&starf;&starf;&starf;&star; | 47 reseñas
